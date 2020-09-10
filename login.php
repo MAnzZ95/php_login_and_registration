@@ -1,21 +1,30 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 col-offset-6 centered" >
-                <h1 > User Login</h1>
-            </div>
-        </div>
-
+    <div class="header">
+        <h2>Login</h2>
     </div>
-    
+
+    <form method="post" action="login.php" >
+        <div class="input-group">
+            <label>Email :</lable>
+            <input type="text" name="email">
+        </div>
+        <div class="input-group">
+            <label>Password :</label>
+            <input type="password" name="password">
+        </div>
+        <div class="input-group">
+            <button type="submit" name="login" class="btn">Login</button>
+        </div>
+        <p>Not yet a member? <a href="register.php">Sign up</p>
+    </form>
 </body>
 </html>
